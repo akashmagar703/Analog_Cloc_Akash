@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/22/21/92/2221924200364e43c452bd43b0cfb94b.jpg");
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: tomato;
+    padding: 20px 10px;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid green; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    box-shadow: 15px 15px 30px #ec956c, -15px -15px 30px #70f1e0;
+}
+
+.clock {
+    width: 325px;
+    height: 325px;
+    /* border: 2px solid black; */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background: url('https://u9gvlfz79kftqw7kvfme8q-on.drv.tw/my%20hosting%20site/clock.project/clock.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset -15px -15px 30px #ece1ec, inset 15px 15px 30px #d1c573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.min {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.sec {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.hr,
+.min,
+.sec {
+    /* border: 1px solid black; */
+    position: absolute;
+}
+
+.clock::before {
+    content: " ";
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    /* border: 2px solid greenyellow; */
+}
+
+.hr::before {
+    position: absolute;
+    content: " ";
+    width: 8px;
+    height: 75px;
+    background-color: black;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.min::before {
+    position: absolute;
+    content: " ";
+    width: 4px;
+    height: 100px;
+    background-color: black;
+    z-index: 11;
+    border-radius: 50%;
+}
+
+.sec::before {
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 125px;
+    background-color: black;
+    z-index: 12;
+    border-radius: 50%;
+}
